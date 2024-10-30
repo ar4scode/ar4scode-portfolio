@@ -201,6 +201,80 @@ header ul li a:hover::after {
   transform: scale(1.1);
 }
 
+#resume {
+  margin-top: 4rem;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.resume-title {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.resume-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+}
+
+.resume-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.resume-info .resume-property {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.resume-info .resume-property .property {
+  font-weight: bold;
+}
+
+.odd {
+  background-color: #eba611;
+}
+
+.odd-black {
+  color: #000;
+  font-weight: bold;
+}
+
+.gray {
+  color: #8b8b8b;
+}
+
+.white {
+  color: #fff;
+}
+
+.resume-img-container img {
+  border-radius: 0.5rem;
+}
+
+.download-resume-pdf-btn {
+  background-color: #eba611;
+  padding: 0.5rem;
+  color: #000;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.download-resume-pdf-btn:hover {
+  transform: translateY(2px);
+}
+
 * {
   margin: 0;
   padding: 0;

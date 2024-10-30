@@ -1,0 +1,75 @@
+#resume {
+  margin-top: 4rem;
+}
+
+@mixin flexDisplay($fd, $jc) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+}
+
+.resume-container {
+  @include flexDisplay(column,start );
+}
+
+.resume-title {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.resume-details {
+  @include flexDisplay(row, space-evenly );
+  margin: 3rem 0;
+}
+
+.resume-info {
+  @include flexDisplay(column, start );
+  .resume-property {
+    @include flexDisplay(row, space-between );
+    width: 20rem;
+    margin: 1rem 0;
+    padding: 1rem;
+
+    .property {
+      font-weight: bold;
+    }
+  }
+}
+
+.odd {
+  background-color: $yellow;
+}
+
+.odd-black {
+  color: #000;
+  font-weight: bold;
+}
+
+.gray {
+  color: $gray;
+}
+
+.white {
+  color: #fff;
+}
+
+
+.resume-img-container {
+  img {
+    border-radius: .5rem;
+  }
+}
+
+.download-resume-pdf-btn {
+  background-color: $yellow;
+  padding: .5rem;
+  color: #000;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    transform: translateY(2px);
+  }
+}
