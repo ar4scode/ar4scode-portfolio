@@ -13,14 +13,14 @@
   <header>
     <h1>Ar<span>4</span>sCode</h1>
     <ul>
-      <li class="nav-btns home-btn" id="#home" onclick="toggleActive(this)">Home</li>
-      <li class="nav-btns about-btn" id="#about" onclick="toggleActive(this)">About</li>
-      <li class="nav-btns resume-btn" id="#resumes" onclick="toggleActive(this)">Resumes</li>
-      <li class="nav-btns service-btn" id="#services" onclick="toggleActive(this)">Services</li>
-      <li class="nav-btns skill-btn" id="#skills" onclick="toggleActive(this)">Skills</li>
-      <li class="nav-btns project-btn" id="#projects" onclick="toggleActive(this)">Projects</li>
-      <li class="nav-btns blog-btn" id="#my-blog" onclick="toggleActive(this)">My Blog</li>
-      <li class="nav-btns contact-btn" id="#contact" onclick="toggleActive(this)">Contact</li>
+      <li class="nav-btns home-btn"><a href="#home" class="nav-links"  onclick="toggleActive(this)">Home</a></li>
+      <li class="nav-btns about-btn"><a href="#about" class="nav-links"onclick="toggleActive(this)">About</a></li>
+      <li class="nav-btns resume-btn"><a href="#resume" class="nav-links" onclick="toggleActive(this)">Resumes</a></li>
+      <li class="nav-btns service-btn"><a href="#services" class="nav-links" onclick="toggleActive(this)">Services</a></li>
+      <li class="nav-btns skill-btn"><a href="#skills" class="nav-links" onclick="toggleActive(this)">Skills</a></li>
+      <li class="nav-btns project-btn"><a href="#projects" class="nav-links" onclick="toggleActive(this)">Projects</a></li>
+      <li class="nav-btns blog-btn"><a href="#blog" class="nav-links" onclick="toggleActive(this)">My Blog</a></li>
+      <li class="nav-btns contact-btn"><a href="#contact" class="nav-links" onclick="toggleActive(this)">Contact</a></li>
     </ul>
   </header>
 
@@ -37,6 +37,40 @@
       </div>
       <div class="image-container">
         <img src="../assets/images/me.JPEG" alt="aras azizi | Ar4sCode image">
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="about-image-container">
+        <img src="../assets/images/me.JPEG" alt="Aras Azizi image">
+      </div>
+      <div class="about-container">
+        <h1>About Me</h1>
+        <p class="intro">A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+        <div class="my-information">
+          <div class="info">
+            <p class="title">Name:</p>
+            <p class="value">Aras Azizi</p>
+          </div>
+          <div class="info">
+            <p class="title">Date of birth:</p>
+            <p class="value">July 25, 2006</p>
+          </div>
+          <div class="info">
+            <p class="title">Address:</p>
+            <p class="value">Iran, Kermanshah</p>
+          </div>
+          <div class="info">
+            <p class="title">Email:</p>
+            <p class="value">ar4sazizi@gmail.com</p>
+          </div>
+          <div class="info">
+            <p class="title">Phone</p>
+            <p class="value">+98 994 565 2222</p>
+          </div>
+        </div>
+        <p class="project-complete"><span>20</span>Project complete</p>
+        <button class="download-cv-btn">DOWNLOAD CV</button>
       </div>
     </div>
   </main>
