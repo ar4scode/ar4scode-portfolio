@@ -54,6 +54,74 @@ header ul li:hover::after {
   font-weight: bold;
 }
 
+#home {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#home .home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#home .home-container .hello-text {
+  color: #eba611;
+  margin-top: 5rem;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+#home .home-container h1 {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 4rem;
+  width: 20rem;
+  word-spacing: 0.5rem;
+}
+#home .home-container h1 span {
+  color: #eba611;
+  font-size: 5rem;
+}
+#home .home-container .job {
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.home-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 1rem;
+}
+.home-btns button {
+  cursor: pointer;
+  padding: 1.2rem 1.4rem;
+  margin: 0 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+.home-btns button:hover {
+  transform: translateY(3px);
+}
+.home-btns .hire-me-btn {
+  background-color: #eba611;
+  font-weight: bold;
+}
+.home-btns .my-works {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+
+.image-container img {
+  width: 30rem;
+}
+
 * {
   margin: 0;
   padding: 0;
