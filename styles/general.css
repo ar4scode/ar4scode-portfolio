@@ -1,6 +1,66 @@
+header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #000;
+  z-index: 100;
+}
+header h1 {
+  color: #fff;
+  margin: 0.5rem 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header h1 span {
+  color: #eba611;
+}
+header ul {
+  display: flex;
+  margin: 0.5rem 5rem;
+}
+header ul li {
+  color: #fff;
+  list-style: none;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s;
+}
+header ul li:hover {
+  color: #eba611;
+}
+header ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust as needed to position the underline */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #eba611; /* Color of the underline */
+  transition: width 0.4s ease;
+}
+header ul li:hover::after {
+  width: calc(100% + 10px); /* 10px padding on each side */
+  left: -5px; /* Center the underline with padding */
+}
+
+.active {
+  color: #eba611;
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
   font-family: "Montserrat";
+}
+
+body {
+  background-color: #000;
 }/*# sourceMappingURL=general.css.map */
