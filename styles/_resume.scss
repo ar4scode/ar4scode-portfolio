@@ -28,7 +28,7 @@
   .resume-property {
     @include flexDisplay(row, space-between );
     width: 20rem;
-    margin: 1rem 0;
+    margin: .5rem 0;
     padding: 1rem;
 
     .property {
@@ -69,6 +69,7 @@
   border-radius: 10rem;
   cursor: pointer;
   transition: all .3s;
+  text-decoration: none;
   &:hover {
     transform: translateY(2px);
   }

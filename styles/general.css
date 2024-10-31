@@ -234,7 +234,7 @@ header ul li a:hover::after {
   flex-direction: row;
   justify-content: space-between;
   width: 20rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding: 1rem;
 }
 .resume-info .resume-property .property {
@@ -270,6 +270,7 @@ header ul li a:hover::after {
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
 }
 .download-resume-pdf-btn:hover {
   transform: translateY(2px);
