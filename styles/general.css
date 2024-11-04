@@ -276,6 +276,76 @@ header ul li a:hover::after {
   transform: translateY(2px);
 }
 
+#skills {
+  margin: 2rem 0;
+}
+#skills h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.skills-container {
+  margin-top: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-containers-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60rem;
+  margin-top: 3rem;
+}
+
+.name-percentage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+  margin-right: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.name-percentage p {
+  font-size: 2rem;
+}
+
+.percentage-holder {
+  width: 15rem;
+  height: 0.4rem;
+  background-color: #8b8b8b;
+  width: 30rem;
+  border-radius: 0.3rem;
+}
+.percentage-holder .percentage {
+  background-color: #eba611;
+  width: 10rem;
+  height: 0.4rem;
+}
+.percentage-holder .html {
+  width: 28rem;
+}
+.percentage-holder .css {
+  width: 24rem;
+}
+.percentage-holder .node {
+  width: 6rem;
+}
+.percentage-holder .react {
+  width: 12rem;
+}
+.percentage-holder .js {
+  width: 18rem;
+}
+.percentage-holder .git {
+  width: 24rem;
+}
+
 * {
   margin: 0;
   padding: 0;

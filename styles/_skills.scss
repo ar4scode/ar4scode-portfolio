@@ -1,0 +1,77 @@
+@mixin flexDisplay($fd,$jc ) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+}
+
+#skills {
+  margin: 2rem 0;
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.skills-container {
+  margin-top: 1rem;
+  color: #fff;
+  @include flexDisplay(column, center);
+  align-items: center;
+}
+
+.skill-containers-row {
+  @include flexDisplay(row,space-between );
+  width: 60rem;
+  margin-top: 3rem;
+}
+
+.name-percentage {
+  @include flexDisplay(row,space-between );
+  width: 30rem;
+  margin-right: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.percentage-holder {
+  width: 15rem;
+  height: 0.4rem;
+  background-color: $gray;
+  width: 30rem;
+  border-radius: .3rem;
+
+  .percentage {
+    background-color: $yellow;
+    width: 10rem;
+    height: 0.4rem;
+  }
+
+  .html {
+    width: 28rem;
+  }
+
+  .css {
+    width: 24rem;
+  }
+
+  .node {
+    width: 6rem;
+  }
+
+  .react {
+    width: 12rem;
+  }
+
+  .js {
+    width: 18rem;
+  }
+
+  .git {
+    width: 24rem;
+  }
+}
+
