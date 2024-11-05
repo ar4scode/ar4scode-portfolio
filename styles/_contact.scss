@@ -1,0 +1,102 @@
+@mixin flexDisplay($fd, $jc) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+}
+
+#contact {
+  @include flexDisplay(column,center );
+  align-items: center;
+}
+
+#contact h1 {
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.contact-container {
+  @include flexDisplay(row,space-between );
+  width: 40rem;
+  margin-top: 2rem;
+}
+
+form {
+  @include flexDisplay(column,start);
+  input {
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #fff;
+    padding: 1rem;
+    width: 15rem;
+    transition: all .3s;
+    margin: 1rem 0;
+    color: $yellow;
+    &:hover {
+      transform: scale(1.1);
+      border-color: $yellow;
+    }
+    &:focus {
+      outline-style: none;
+    }
+  }
+
+  textarea {
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #fff;
+    height: 10rem;
+    color: #fff;
+    padding: .5rem;
+    transition: all .3s;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+      border-color: $yellow;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: $yellow;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10rem;
+    margin-top: 3rem;
+    cursor: pointer;
+  }
+}
+
+.follow-me {
+  @include flexDisplay(column,start );
+  p {
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .social-links {
+    margin: 1rem;
+    a {
+      margin-right: 2rem;
+      font-size: 2rem;
+      text-decoration: none;
+      color: #fff;
+      transition: all .4s;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+.contact-location {
+  margin-left: 1rem;
+  i {
+    margin-right: 0.4rem;
+    color: $yellow;
+  }
+}

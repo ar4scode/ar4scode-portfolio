@@ -17,8 +17,8 @@
       <li class="nav-btns about-btn"><a href="#about" class="nav-links"onclick="toggleActive(this)">About</a></li>
       <li class="nav-btns resume-btn"><a href="#resume" class="nav-links" onclick="toggleActive(this)">Resumes</a></li>
       <li class="nav-btns skill-btn"><a href="#skills" class="nav-links" onclick="toggleActive(this)">Skills</a></li>
-      <li class="nav-btns project-btn"><a href="#projects" class="nav-links" onclick="toggleActive(this)">Projects</a></li>
-      <li class="nav-btns blog-btn"><a href="#blog" class="nav-links" onclick="toggleActive(this)">My Blog</a></li>
+      <!-- <li class="nav-btns project-btn"><a href="#projects" class="nav-links" onclick="toggleActive(this)">Projects</a></li> -->
+      <!-- <li class="nav-btns blog-btn"><a href="#blog" class="nav-links" onclick="toggleActive(this)">My Blog</a></li> -->
       <li class="nav-btns contact-btn"><a href="#contact" class="nav-links" onclick="toggleActive(this)">Contact</a></li>
     </ul>
   </header>
@@ -170,8 +170,35 @@
         </div>
       </div>
     </div>
+
+    <div id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-container">
+        <form action="">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <textarea name="" id="text-area" required placeholder="Write your message, questions, or feedback..."></textarea>
+          <input type="submit" value="Send">
+        </form>
+
+        <div class="follow-me">
+          <p>Follow Me on:</p>
+          <div class="social-links">
+            <a href="https://github.com/ar4scode"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ar4scode"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_arasazizi/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <div class="address-contact">
+            <p>Address:</p>
+            <p class="contact-location"><i class="fa-solid fa-location-dot"></i>Iran, Kermanshah</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <script src="../script/app.js"></script>
+  <script src="https://kit.fontawesome.com/d58338cd3e.js" crossorigin="anonymous"></script>
 </body>
 </html>
