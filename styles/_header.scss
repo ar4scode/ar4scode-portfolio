@@ -55,6 +55,16 @@ header {
   }
 }
 
+@media(width < 375px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  ul li a {
+    font-size: 1.2rem;
+  }
+}
+
 .active {
   color: $yellow;
   transform: scale(1.2);

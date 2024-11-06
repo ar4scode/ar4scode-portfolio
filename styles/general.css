@@ -52,6 +52,14 @@ header ul li a:hover::after {
   left: -5px; /* Center the underline with padding */
 }
 
+@media (width < 375px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  ul li a {
+    font-size: 1.2rem;
+  }
+}
 .active {
   color: #eba611;
   transform: scale(1.2);
@@ -394,7 +402,7 @@ form textarea {
   border: none;
   border-bottom: 1px solid #fff;
   height: 10rem;
-  color: #fff;
+  color: #eba611;
   padding: 0.5rem;
   transition: all 0.3s;
 }
