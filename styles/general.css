@@ -107,7 +107,8 @@ header ul li a:hover::after {
   justify-content: start;
   margin-top: 1rem;
 }
-.home-btns button {
+.home-btns button,
+.home-btns a {
   cursor: pointer;
   padding: 1.2rem 1.4rem;
   margin: 0 0.5rem;
@@ -116,7 +117,8 @@ header ul li a:hover::after {
   transition: all 0.3s;
   font-size: 1.2rem;
 }
-.home-btns button:hover {
+.home-btns button:hover,
+.home-btns a:hover {
   transform: translateY(3px);
 }
 .home-btns .hire-me-btn {
@@ -128,6 +130,7 @@ header ul li a:hover::after {
   color: #fff;
   border: 1px solid #fff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .image-container img {
